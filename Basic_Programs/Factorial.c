@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<conio.h>
 
 // Function to calculate factorial
 long long int factorial(int n) {
@@ -22,6 +23,6 @@ int main() {
         // Call the factorial function
         printf("Factorial of %d is %lld\n", num, factorial(num));
     }
-    
+    getch();
     return 0;
 }
