@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<conio.h>
 
@@ -10,12 +9,10 @@ int main()
     int n;
     float celsius, fahrenheit;
      
-    printf("Enter 1: Fahrenheit To Celsius\nEnter 2: Celsius To Fahrenheit\n           Option : ");
+    printf("Enter 1: Fahrenheit To Celsius\nEnter 2: Celsius To Fahrenheit\n\t\tOption : ");
     scanf("%d",&n);
      
-    if(n==1)
-    {
-        switch(n)
+    switch(n)
         {
             case 1:
                  printf("\nEnter temperature in Celsius: ");
@@ -28,9 +25,6 @@ int main()
             break;
         }
         
-    }
-    else if (n==2)
-    {
          switch(n)
          {
              case 2:
@@ -41,12 +35,9 @@ int main()
                    
                    printf("\nTemperature in celsius = %.2f°C\n",celsius);
              break;
-         }     
-    }
-    else
-    {
+   
         printf("%dNot correct number",n);
-    }
+   
     
     getch();
     return 0;
